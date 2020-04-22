@@ -1,0 +1,628 @@
+/************************
+    ESTILOS - BASICOS
+*************************/
+* { 
+    box-sizing: border-box;
+  }
+h1,h2,h3{
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+h2,h3,h4,h5,p{
+    font-family: var(--font2);
+}
+h1{
+    font-size: 75px;
+    line-height: 90px;
+    font-family: var(--font1);
+    color: white;
+}
+h2{
+    font-size: 25px;
+    line-height: 30px; 
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+h3{
+    font-size: 22px;
+    line-height: 28px;
+}
+h4{
+    font-size: 14px;
+    line-height: 20px;
+}
+h5{
+    margin-bottom: 0px;
+}
+p{
+    font-size: 18px;
+    line-height: 35px;
+    margin: 0;
+    font-weight: 400;  
+}
+a{
+    text-decoration: none;
+}
+figure{
+    margin: 0;     
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+:root{
+    --font1: 'Playfair Display', serif;
+    --font2: 'Montserrat', sans-serif;
+}
+.main-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding:0 10px;
+}
+
+/*****************
+    NAVBAR
+*****************/
+.navbar{
+    box-shadow: none;
+}
+.top-nav-collapse{
+    background-color: #b63d32;;
+    box-shadow: 6px 12px 12px 0 rgba(0, 0, 0, 0.16);
+}
+.nav-link{
+    color: white;
+    font-size: 15px;
+    margin: 15px;
+}
+.nav-link:hover{
+    color: rgb(211, 185, 183);
+}
+.logo-brand{
+    margin-left: 40px;
+}
+.navbar-toggler{
+    font-size: 20px;
+}
+.colum-bottom::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    transition:  width 0.3s;
+}
+.colum-bottom:hover::after{
+    width: 100%;
+    transition:  width 0.3s;  
+}
+
+/********************
+    HERO BANNER
+*********************/
+.flexslider{
+    border: 0px;
+}
+.slides li{
+    background-size: cover;
+    background-position: center center;
+    height: 658px;   
+}
+.slider1{
+    background-image: url(../img/slider/banner2.png);
+}
+.slider2{
+    background-image: url(../img/slider/banner3.png);
+}
+.slider3{
+    background-image: url(../img/slider/banner1.png);
+}
+.content-hero-banner{
+    height: 658px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: left;
+}
+.content-hero-banner .content-hero-banner-text{  
+    padding: 0 40px;
+}
+.content-hero-banner .content-hero-banner-text p{
+    color: white;
+    margin-top: 5px;
+    font-size: 20px;
+}
+.flex-pre,.flex-next{
+    width: 50px;
+    height: 50px;
+}
+/********************************
+    MAIN-DESCRIPTION
+********************************/
+.main-description{
+    padding: 40px 0 60px;
+}
+.contend-description{
+    padding: 0 20px;
+}
+.description{
+    display: flex;
+}
+.description .title,
+.description .img{
+    width: 50%;    
+}
+.description .img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.description .title p:first-child{
+    color: rgb(182, 61, 50);
+    font-size: 25px;
+}
+.description .title p{
+    color: #949494;
+}
+
+/**************************
+    CARDS-INFO
+**************************/
+.main-info{
+    padding: 100px 0;
+    background-color: rgba(44, 41, 40,0.2); 
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);   
+}
+.info>p{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(182, 61, 50);
+}
+.info h2{
+    text-align: center;
+}
+.cards-global-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+.cards-info{
+    max-width: 350px;
+    width: 29.167%;
+    background-color: white; 
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.16);
+}
+.cards-info>figure {
+    overflow: hidden;
+}
+.cards-info>figure img{
+    transition: 0.3s;
+    display: block;
+}
+.cards-info .information{
+    padding: 30px;
+}
+.cards-info .information span{
+    font-family: var(--font2);
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px 0;
+}
+.cards-info .information p{
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+.cards-info:hover .information{
+    background-color: rgba(182, 61, 50, 0.5);
+}
+.cards-info:hover img{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+/**************************
+        REPERTORIO
+**************************/
+.main-repertorio{
+    display: flex; 
+}
+.repertorio{
+    text-decoration: none;
+}
+.repertorio .prueba {
+    height: 230px; 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.repertorio .prueba .reper-logo{
+    width: 30%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.repertorio .prueba .reper{
+    width: 70%;
+    color: white;
+}
+.repertorio .prueba .reper p{
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+.main-repertorio a:nth-of-type(1){
+    background-image: url(../img/repertorio/reper1.png);
+    background-size: cover;
+    background-position: center center;
+}
+.main-repertorio a:nth-of-type(2){
+    background-image: url(../img/repertorio/reper2.png);
+    background-size: cover;
+    background-position: center center;
+}
+.main-repertorio a:nth-of-type(3){
+    background-image: url(../img/repertorio/reper3.png);
+    background-size: cover;
+    background-position: center center;
+}
+.main-repertorio .repertorio:hover .reper{
+    color: rgb(182, 61, 50);
+}
+
+/**************************
+        CARDS
+**************************/
+.main-cards{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 100px 0;
+}
+.members{
+    text-align: center;
+}
+.members>p{
+    color: #b63d32;
+    margin-right: 20px;
+    font-size: 25px;
+}
+.cards-global{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: center;
+}
+.cards{
+    position: relative;
+    background-image: url(../img/foncard.png);
+    background-color: #fff;
+    margin: 10px 10px 30px;
+    width: 280px;
+    height: 320px;
+    overflow: hidden;
+    transition: all 0.2s;
+    border-left: 2px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+}
+    /* IMAGENES */
+.cards .imagen2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.cards .imagen2 img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+    width: 130px;
+    height: 130px;
+}
+.linea{
+    width: 150px;
+    height: 3px;
+    background-color: rgba(180, 60, 49,0.8);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+    /* TEXTO */
+.cards .content-name{
+    text-align: center;
+    margin-top: 20px;
+}
+.cards .content-name h4{
+    margin-bottom: 35px;
+}
+.cards .content-name p{
+    font-size: 15px;
+    line-height: 22px;
+    color: white;
+}
+.cards:hover{
+    box-shadow: 6px 12px 12px 0 rgba(83, 65, 63, 0.4);
+}
+.cards .link-face{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    font-size: 18px;
+    color: white; 
+}
+.cards .link-face>a{
+    color: white;   
+}
+
+/******************************
+    SOCIAL - NETWORK
+******************************/
+.main-social-network{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+.main-social-network .social-network{
+    list-style-type: none;
+}
+.main-social-network .social-network>li {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(119,238,100);
+}
+.main-social-network .social-network>li>a{
+    color: white;
+    font-size: 40px;
+}
+
+/**************************
+    RECOMENDATION
+**************************/
+.main-testimonial{
+    background-color: rgba(44, 41, 40,0.2); 
+    padding: 100px 0;
+}
+.testimonial-title h2{
+    text-align: center;
+}
+    /**/
+.carousel{
+    text-align: center;
+    padding: 40px;
+}
+.carousel-container{
+    max-width: 800px;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+}
+.carousel-container>p{
+    font-size: 20px;  
+    color: black;
+    margin-bottom: 20px;
+}
+.raiting .list-inline .list-inline-item>i{
+    color: chocolate;
+    font-size: 20px;
+}
+.control-button{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 35px;
+}
+.testimonial-user{
+    max-width: 240px;
+    display: flex;
+    margin: 20px auto;
+    text-align: left;
+}
+.testimonial-name-member span{
+    font-size: 12px;
+}
+.testimonial-name-member{
+    margin-left: 15px;
+}
+.image img{
+    max-width: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/******************************
+    MAIN-FOOTER
+******************************/
+.main-footer{
+    background-color: #2c2928;  
+    padding: 45px 0;
+}
+.footer{
+    text-align: center;
+}
+.footer .lista-footer .enlaces{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;  
+    margin-top: 0;  
+    padding: 0;
+}
+.lista-footer .enlaces .logo-footer{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 61, 50);
+    border-radius: 50%;
+}
+.lista-footer .enlaces .logo-footer>a{
+   color: white;
+   font-size: 20px;
+}
+.enlaces .logo-footer:not(:last-child){
+    margin-right: 20px;
+}
+.footer .text-footer>p{
+    font-size: 16px;
+    color: rgb(148, 148, 148);
+}
+
+/******* MEDIA QUERY *********/
+@media (max-width: 1200) { 
+}
+
+@media (max-width: 992px) { 
+    /***** hero banner *****/
+        h1{
+            font-size: 65px;
+            line-height: 80px;
+        }
+        .content-hero-banner .content-hero-banner-text p{
+            font-size: 18px;
+        }
+    /**********************/
+        h3{
+            font-size: 18px;
+        }
+        .navbar{
+            background-color: #b63d32;
+        }
+    /************************/
+    .description .title p{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .repertorio .prueba .reper p{
+        font-size: 14px;
+        line-height: 25px;
+    }  
+ }
+@media screen and (max-width: 768px) {  
+
+    h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    h3{
+        font-size: 22px;
+    }
+
+    
+    .main-description{
+        padding: 50px 0;
+    }
+    .description{
+        flex-direction: column;    
+    }
+    .description .title,
+    .description .img{
+        width: 100%;
+    }
+    .description .title{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .description .title p:first-child{
+        padding-top: 0;
+    }
+    /**************************/
+    .main-repertorio{
+        flex-direction: column;
+    }
+    .repertorio .prueba .reper p{
+        font-size: 16px;
+        line-height: 25px;
+    }   
+    /**************************/
+    .main-info{
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);   
+    }
+    .cards-global-info{
+        flex-direction: column;  
+        align-items: center;
+        padding: 10px;
+    }
+    .cards-info{
+        width: 100%;
+        margin-bottom: 20px;
+    }    
+    /***************************/
+    .main-testimonial{
+        padding: 50px 0;
+    }
+    .testimonial-title h2{
+        margin-bottom: 0;
+    }
+    .carousel-container>p{
+        font-size: 16px;  
+        line-height: 25px;
+    }    
+ }
+ @media (max-width: 576px) {
+    h1{
+        font-size: 45px;
+        line-height: 60px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    } 
+    .logo-brand{
+        margin-left: 0px;
+    }
+    .slides li{
+        height: 500px;
+    }
+    .content-hero-banner{
+        height: 500px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+    }
+    .content-hero-banner .content-hero-banner-text{  
+        padding: 0 40px;
+    }
+    .content-hero-banner .content-hero-banner-text p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    /***********************/
+    .carousel-container>p{
+        font-size: 13px;  
+        line-height: 20px;
+    }
+    .control-button{
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+    }
+    /***********************/
+    .footer{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .lista-footer .enlaces .logo-footer {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+    .lista-footer .enlaces .logo-footer>a{
+        font-size: 15px;
+     }
+    .footer .text-footer>p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+   
+}

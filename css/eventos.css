@@ -1,0 +1,242 @@
+.navbar{
+    background-color: #b63d32;
+}
+.cabecera{
+    height: 400px;
+    margin-top: 70px;
+    background-image: url(../img/eventos/cabecera2.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar{
+    background-color: #b63d32;
+    box-shadow: 6px 12px 12px 0 rgba(0, 0, 0, 0.16);
+}
+.main-event{
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+.event h2{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.event h2::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #b63d32;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.event h2 span{
+    color: #b63d32;
+    font-family: var(--font2);
+}
+
+.event-card-global{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+/* cada cards */
+.event-card{
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+}
+
+/* caja superior del card */
+.event-img{
+    position: relative;
+}
+.event-img figcaption{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(44, 41, 40,0.8);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.event-img figcaption a{
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px 30px;
+    font-family: var(--font1);
+}
+.event-img figcaption:hover{
+    opacity: 1;
+    transition: all 0.5s;
+}
+/* caja inferior del card */
+.event-text{
+    background-color: rgb(44, 41, 40);
+    display: flex;
+}
+.event-fecha{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 8px 0;
+    font-family: var(--font1);
+}
+.event-fecha :nth-child(1){
+    font-size: 20px;
+    font-family: var(--font2);
+}
+.event-fecha :nth-child(2){
+    font-size: 14px;
+}
+.event-fecha :nth-child(3){
+    font-size: 14px;
+}
+.event-description{
+    width: 80%;
+    background-color: rgb(245,247,250);
+    padding: 20px;
+}
+.event-description p{
+    color: rgb(182, 61, 50)
+}
+
+/* popup */
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 20px;
+    background-color: rgba(0,0,0, 0.8);
+	z-index: 2;
+	visibility: hidden;
+	opacity: 0; 
+    transition: all 0.5 ease-in-out;
+}
+.popup-inner{
+    position: relative;
+    display: flex;
+    max-width: 800px;
+    width: 80%;
+    bottom: -100vw;
+    right: -100vh;  
+    background-color: white;
+    transform: rotate(32deg);
+    transition: all 0.5s ease-in-out;   
+}
+.popup-inner .popup-text{
+    width: 50%;
+    padding: 20px 30px;
+}
+.popup-inner .popup-text h4{
+    margin-bottom: 12px;
+    color: #b63d32;
+    font-size: 20px;
+}
+.popup-inner .popup-text p:nth-of-type(1){
+    font-size: 15px;
+    line-height: 25px;
+}
+.popup-inner .popup-text .fot{
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+} 
+
+/* abrir y cerrar */
+.popup:target{
+    visibility: visible;
+    opacity: 1;
+}
+.popup:target .popup-inner{
+    bottom: 0;
+    right: 0;
+    transform: rotate(0); 
+} 
+.popup .popup-close{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #b63d32;
+    right: -10px;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup .popup-close a{
+    color: white;
+    font-size: 20px;
+}
+@media screen and (max-width: 992px){
+    
+    .popup-inner .popup-text{
+        padding: 15px 30px;
+    }
+    .popup-inner .popup-text hr{
+        display: none;
+    }
+    .popup-inner .popup-text .fot{
+        display: none;
+    } 
+}
+@media screen and (max-width: 860px){
+    .popup-inner .popup-text{
+        padding: 10px 20px;
+    }
+    .popup-inner .popup-text p:nth-of-type(1){
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .popup-inner{
+        flex-direction: column;
+    }
+    .popup-inner .popup-text{
+        width: 100%;
+    }
+    .popup-inner{
+        max-width: 800px;
+        width: 70%;
+    }
+    .popup-inner .popup-text p:nth-of-type(1){
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .popup-inner .popup-text h4{
+        text-align: center;
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 576px){
+    .cabecera{
+        height: 300px;
+    }
+}
+
+
+
+
+

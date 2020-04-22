@@ -1,0 +1,127 @@
+:root{
+    --font1: 'Playfair Display', serif;
+    --font2: 'Montserrat', sans-serif;
+}
+.cabecera{
+    height: 400px;
+    margin-top: 70px;
+    background-image: url(../img/repertorio/cabecera2.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar{
+    background-color: #b63d32;;
+    box-shadow: 6px 12px 12px 0 rgba(0, 0, 0, 0.16);
+}
+/********************************/
+.main-repertorio{
+        margin-top: 80px;
+        margin-bottom: 120px;
+}
+.repertorio{
+    display: flex;
+    padding: 0 20px;
+}
+.repert-img{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.repertorio-text{
+    width: 50%;
+    padding-left: 40px;
+}
+.repertorio .repertorio-text h2{
+    margin-bottom: 20px;
+}
+.repertorio .repertorio-text h2::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: rgb(182, 61, 50);
+    margin-top: 10px;
+    border-radius: 3px;
+} 
+.repertorio .repertorio-text h2 span{
+    color: rgb(182, 61, 50);
+    font-family: var(--font2);
+}
+.repertorio .repertorio-text p:nth-of-type(1),
+.repertorio .repertorio-text p:nth-of-type(2){
+    margin: 10px 0;
+}
+.repertorio-text .repertorio-list{
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    line-height: 35px;
+    font-family: var(--font2);
+}
+.repertorio-text .repertorio-list li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #b63d32;
+    display: inline-block;
+    margin-right: 8px;
+}
+.repertorio .repertorio-text p:nth-of-type(3){
+    border: 2px solid black;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 20px;
+    padding: 16px ;
+}
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 992px){
+    .repertorio .repertorio-text p:nth-of-type(1),
+    .repertorio .repertorio-text p:nth-of-type(2),
+    .repertorio-text .repertorio-list{
+        font-size: 15px;
+    }
+    .repertorio .repertorio-text p:nth-of-type(3){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .repertorio{
+        flex-direction: column;
+    }
+    .repert-img,
+    .repertorio-text{
+        width: 100%;
+    }
+    .repert-img{
+        order: 2;
+    }
+    .repertorio-text{
+        order: 1;
+        text-align: center;
+        padding-left: 0;
+    }
+    h2::after{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .repertorio-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }    
+}
+
+
+@media screen and (max-width: 576px){
+    .cabecera{
+        height: 300px;
+    }
+}
