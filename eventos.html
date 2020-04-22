@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- style propio -->
     <link rel="stylesheet" href="css/eventos.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Fontawesone kit propio -->
     <script src="https://kit.fontawesome.com/0f83311815.js" crossorigin="anonymous"></script>
     <!-- google font propio -->
@@ -70,7 +72,7 @@
                 <h2>Ultimos <span>eventos</span></h2>            
                 <div class="event-card-global">
                     <!-- primer cards -->
-                    <div class="event-card">
+                    <div class="event-card" data-aos="fade-up">
                         <figure class="event-img">
                             <img src="img/eventos/evento 7.png" alt="">
                             <figcaption>
@@ -108,7 +110,7 @@
                     </div>
 
                     <!-- segundo cards -->
-                    <div class="event-card">
+                    <div class="event-card" data-aos="fade-up">
                         <figure class="event-img">
                             <img src="img/eventos/evento 8.png" alt="">
                             <figcaption>
@@ -146,7 +148,7 @@
                     </div>
                     
                     <!-- tercer cards -->
-                    <div class="event-card">
+                    <div class="event-card" data-aos="fade-up">
                         <figure class="event-img">
                             <img src="img/eventos/evento 5.png" alt="">
                             <figcaption>
@@ -184,7 +186,7 @@
                     </div>
                
                     <!-- cuarto cards -->
-                    <div class="event-card">
+                    <div class="event-card" data-aos="fade-up">
                         <figure class="event-img">
                             <img src="img/eventos/evento 4.png" alt="">
                             <figcaption>
@@ -270,8 +272,9 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
 
-<script>
-    
-</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
