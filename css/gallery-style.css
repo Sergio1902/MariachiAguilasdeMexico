@@ -15,7 +15,7 @@
     background-attachment: fixed;
 }
 .main-gallery{
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 120px;
 }
 .gallery-content{
@@ -62,9 +62,6 @@
 }
 
 
-
-
-
 /* magnific popup */
 .zoom-gallery{
     display: flex;
@@ -73,8 +70,8 @@
     align-items: center;
 }
 .gallery{
-    width: 370px;
-    margin: 10px;
+    width: 360px;
+    margin: 12px;
 }
 .image-source-link {
 	color: #98C3D1;

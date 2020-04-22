@@ -78,17 +78,19 @@ img{
     align-items: center; 
 }
 .carga{
-    width: 80px;
-    height: 80px;
-    border: 15px solid #b63d32;
+    width: 70px;
+    height: 70px;
+    border: 10px solid #b63d32;
     border-top-color: chocolate;
     border-top-style: groove;
     border-radius: 50%;
     animation: girar 2s infinite linear;
 }
 .cerrar{
-    transform: translateY(-100%);
     transition: all 0.5;
+    opacity: 0;
+    transform: translate(-100%, -100%);
+
 }
 
 /*****************
@@ -134,6 +136,7 @@ img{
 .flexslider{   
     overflow: hidden;
     border: 0;
+    border-radius: 0;
 }
 .slides li{
     background-size: cover;
@@ -326,7 +329,6 @@ img{
     margin: 10px 10px 30px;
     width: 280px;
     height: 320px;
-    overflow: hidden;
     transition: all 0.2s;
     border-left: 2px solid rgba(0, 0, 0, 0.16);
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);

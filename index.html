@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="plugins/css/flexslider.css">
     <!-- style propio -->
     <link rel="stylesheet" href="css/style.css">
-
+    <!-- style AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- kit fontawesone -->
     <script src="https://kit.fontawesome.com/0f83311815.js" crossorigin="anonymous"></script>
     <!-- google font propio -->
@@ -218,7 +219,7 @@
                 <p>Conoce a</p>
                 <h2>Nuestros Integrantes</h2>
                 <div class="cards-global">
-                    <div class="cards" data-aos="fade-up">
+                    <div class="cards" data-aos="zoom-out-up">
                         <figure class="imagen2">
                             <img src="img/integrantes/teresa.jpg" alt="sergio" >
                         </figure>
@@ -460,7 +461,6 @@
 </main>
 
 <!-- MD BOOSTRAP -->
-
 <!-- JQuery -->
 <script src="js/jquery-3.5.0.min.js"></script>
 <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
@@ -471,14 +471,21 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
 
+
+
+
 <!-- Magnific Popup -->
 <script src="plugins/js/jquery.magnific-popup.min.js"></script>
 
 <!-- flexSlide -->
 <script src="plugins/js/jquery.flexslider-min.js"></script>
 
-<script type="text/javascript">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
     $(document).ready(function(){
+        AOS.init();
+
         $('.flexslider').flexslider({
             animation: "slide"
         });
@@ -488,12 +495,15 @@
         content.classList.add("cerrar");
         }, 1200);  
 
+        
     });
+    
 </script>
 
 <script>
         
- </script>
+</script>
+
 
 
 </body>

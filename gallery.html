@@ -19,9 +19,12 @@
     <!-- normalize -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- style propio -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- style propio -->
     <link rel="stylesheet" href="css/gallery-style.css">
+    <!-- style propio -->
+    <link rel="stylesheet" href="css/style.css">
+    
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Fontawesone kit propio -->
     <script src="https://kit.fontawesome.com/0f83311815.js" crossorigin="anonymous"></script>
     <!-- google font propio -->
@@ -71,7 +74,7 @@
             <div class="gallery-content">
                 <h2>Nuestra <span>galería</span></h2>
                 <div class="zoom-gallery">
-                    <div class="gallery">
+                    <div class="gallery" data-aos="zoom-in-right" data-aos-duration="1000">
                         <a href="img/galeria/galeria1.png" title="imagen1">
                             <figure class="local">
                                 <img src="img/galeria/galeria1.png">
@@ -79,7 +82,7 @@
                             </figure>    
                         </a>
                     </div>
-                    <div class="gallery">
+                    <div class="gallery" data-aos="zoom-in-up" data-aos-duration="1000">
                         <a href="img/galeria/galeria2.png" title="imagen2">
                             <figure class="local">
                                 <img src="img/galeria/galeria2.png">
@@ -87,7 +90,7 @@
                             </figure> 
                         </a>
                     </div>
-                    <div class="gallery">
+                    <div class="gallery" data-aos="zoom-in-left" data-aos-duration="1000">
                         <a href="img/galeria/galeria3.png" title="imagen3">
                             <figure class="local">
                                 <img src="img/galeria/galeria3.png">
@@ -95,7 +98,7 @@
                             </figure> 
                         </a>
                     </div>
-                    <div class="gallery">
+                    <div class="gallery" data-aos="zoom-in-right" data-aos-duration="1000">
                         <a href="img/galeria/galeria4.png" title="imagen3">
                             <figure class="local">
                                 <img src="img/galeria/galeria4.png">
@@ -103,7 +106,7 @@
                             </figure> 
                         </a>
                     </div>
-                    <div class="gallery">
+                    <div class="gallery" data-aos="zoom-in-up" data-aos-duration="1000">
                         <a href="img/galeria/galeria2.png" title="imagen3">
                             <figure class="local">
                                 <img src="img/galeria/galeria2.png">
@@ -111,7 +114,7 @@
                             </figure> 
                         </a>
                     </div>
-                    <div class="gallery">
+                    <div class="gallery" data-aos="zoom-in-left" data-aos-duration="1000">
                         <a href="img/galeria/galeria1.png" title="imagen3">
                             <figure class="local">
                                 <img src="img/galeria/galeria1.png">
@@ -207,6 +210,10 @@
 });
 
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
 </body>
