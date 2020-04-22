@@ -29,12 +29,15 @@
     <!-- google font propio -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700&display=swap" rel="stylesheet">
 
-    
-
-    
 </head>
 <body>
 <main>
+
+    <div id="container" class="contenedor">
+        <div class="carga">
+        </div>
+    </div>
+
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
         <div class="container-fluid">
@@ -455,7 +458,7 @@
         </div>
     </div>
 </main>
-   
+
 <!-- MD BOOSTRAP -->
 
 <!-- JQuery -->
@@ -468,9 +471,6 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
 
-<!-- JQuery -->
-<!-- <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script> -->
-
 <!-- Magnific Popup -->
 <script src="plugins/js/jquery.magnific-popup.min.js"></script>
 
@@ -482,8 +482,18 @@
         $('.flexslider').flexslider({
             animation: "slide"
         });
+
+        var content = document.getElementById("container");
+        setTimeout(function(){
+        content.classList.add("cerrar");
+        }, 1200);  
+
     });
 </script>
+
+<script>
+        
+ </script>
 
 
 </body>
