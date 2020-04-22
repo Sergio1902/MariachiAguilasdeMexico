@@ -3,7 +3,7 @@
     --font2: 'Montserrat', sans-serif;
 }
 .cabecera{
-    height: 400px;
+    height: 480px;
     margin-top: 70px;
     background-image: url(../img/repertorio/cabecera2.jpg);
     background-position: 50% 50%;
@@ -77,6 +77,33 @@
     margin-top: 20px;
     padding: 16px ;
 }
+
+/******************************
+    SOCIAL - NETWORK
+******************************/
+.main-social-network{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+.main-social-network .social-network{
+    list-style-type: none;
+}
+.main-social-network .social-network>li {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(119,238,100);
+}
+.main-social-network .social-network>li>a{
+    color: white;
+    font-size: 40px;
+}
+
+
 
 
 
