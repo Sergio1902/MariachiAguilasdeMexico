@@ -63,6 +63,20 @@ img{
     padding:0 10px;
 }
 
+/*** Animations ***/
+.content-hero-banner-text>h1{
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+.content-hero-banner-text p{
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+}
+/*****************/
+
+
+
+
 /*******************
     SCROLLING
 *******************/
@@ -73,9 +87,6 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     background-color: #b63d32;
 }
-
-
-
 
 /*******************
     LADING PAGE
