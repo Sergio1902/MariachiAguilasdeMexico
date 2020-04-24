@@ -64,6 +64,20 @@ img{
 }
 
 /*******************
+    SCROLLING
+*******************/
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: rgba(44, 41, 40,0.2);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #b63d32;
+}
+
+
+
+
+/*******************
     LADING PAGE
 *******************/
 .contenedor{
