@@ -147,6 +147,10 @@ body::-webkit-scrollbar-thumb{
 /********************
     HERO BANNER
 *********************/
+.flex-direction-nav a{
+    width: 50px;
+    height: 50px;
+}
 .flexslider{   
     overflow: hidden;
     border: 0;
@@ -525,7 +529,9 @@ body::-webkit-scrollbar-thumb{
     font-size: 16px;
     color: rgb(148, 148, 148);
 }
-
+.lista-footer .enlaces .logo-footer:hover{
+    background-color:rgb(158, 40, 29);
+}
 
 @keyframes girar{
     from{
