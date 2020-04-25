@@ -65,12 +65,12 @@ img{
 
 /*** Animations ***/
 .content-hero-banner-text>h1{
-    animation-duration: 1s;
-    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
 }
 .content-hero-banner-text p{
-    animation-duration: 1s;
-    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+    animation-delay: 1.9s;
 }
 /*****************/
 
