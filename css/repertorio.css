@@ -1,7 +1,3 @@
-:root{
-    --font1: 'Playfair Display', serif;
-    --font2: 'Montserrat', sans-serif;
-}
 .cabecera{
     height: 480px;
     margin-top: 70px;
@@ -17,7 +13,6 @@
 /********************************/
 .main-repertori{
         margin-top: 80px;
-        /* margin-bottom: 120px; */
 }
 .repertorio{
     display: flex;
@@ -97,20 +92,22 @@
     max-width: 250px;
     margin-bottom: 30px;
     border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-right-radius: 8px;   
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);  
     overflow: hidden;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+    transition: all 0.5s;
 }
 .repertorio-card-text h3{
     font-size: 16px;
     padding: 10px 0;
     font-weight: 400;
 }
-.repertorio-card:hover{
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, .14), 0 8px 10px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+.repertorio-card:hover{  
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, .14), 0 8px 10px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);  
 }
 .repertorio-card:hover h3{
     color: rgba(0, 0, 0, 0.7) ;
+    transition: all 0.5s;
 }
 
 /* MEDIA QUERY */
@@ -156,5 +153,11 @@
 @media screen and (max-width: 576px){
     .cabecera{
         height: 300px;
+    }
+    .repertorio-card-global{
+        flex-direction: column;
+    }
+    .repertorio-card-global .repertorio-card:not(:last-child){
+        margin-right: 0;
     }
 }

@@ -23,16 +23,15 @@
     <link rel="stylesheet" href="css/gallery-style.css">
     <!-- style propio -->
     <link rel="stylesheet" href="css/style.css">
-    
-
+    <!-- AOS Animated style -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="plugins/css/magnific-popup.css">
     <!-- Fontawesone kit propio -->
     <script src="https://kit.fontawesome.com/0f83311815.js" crossorigin="anonymous"></script>
     <!-- google font propio -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700&display=swap" rel="stylesheet">
-    <!-- magnific popup -->
-    <link rel="stylesheet" href="plugins/css/magnific-popup.css">
-    
+
 </head>
 <body>
 <main>
@@ -195,7 +194,7 @@
    
 <!-- MD BOOSTRAP -->
 <!-- JQuery -->
-<script src="js/jquery-3.5.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
@@ -203,47 +202,41 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
 
-<!-- script CDN de JQuery -->
-<!-- <script src="js/jquery-3.5.0.min.js"></script> -->
-
 <!-- js de magnific popup -->
 <script src="plugins/js/jquery.magnific-popup.min.js">
 </script>
+<!-- AOS Animated -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>      
         $(document).ready(function() {
-	    $('.zoom-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		closeOnContentClick: false,
-		closeBtnInside: false,
-		mainClass: 'mfp-with-zoom mfp-img-mobile',
-		image: {
-			verticalFit: true,
-			titleSrc: function(item) {
-				return item.el.attr('title');
-			}
-		},
-		gallery: {
-			enabled: true
-		},
-		zoom: {
-			enabled: true,
-			duration: 300,
-			opener: function(element) {
-				return element.find('img');
-			}
-		}
-		
-	});
-});
-
+            // Magicpopup
+            $('.zoom-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function(item) {
+                    return item.el.attr('title');
+                }
+            },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300,
+                    opener: function(element){
+                        return element.find('img');
+                    }
+                }
+	        });
+            // ASO Animated
+            AOS.init();
+        });
 </script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-
 </body>
 </html>
