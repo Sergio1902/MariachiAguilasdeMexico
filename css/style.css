@@ -458,9 +458,10 @@ body::-webkit-scrollbar-thumb{
     RECOMENDATION
 **************************/
 .main-testimonial{
-    background-color: rgba(44, 41, 40,0.2); 
+    
     padding: 100px 0;
-    background-image: url(../img/recomendation.png);
+    /* background-image: url(../img/recomendation.png); */
+    background-color: rgba(105, 62, 47, 0.2); 
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
