@@ -250,6 +250,7 @@ body::-webkit-scrollbar-thumb{
     width: 29.167%;
     background-color: white; 
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.16);
+    transition: all 0.3s;
 }
 .cards-info>figure {
     overflow: hidden;
@@ -272,12 +273,13 @@ body::-webkit-scrollbar-thumb{
     margin-top: 10px;
     line-height: 25px;
 }
-.cards-info:hover .information{
-    background-color: rgba(182, 61, 50, 0.5);
+.cards-info:hover{
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, .14), 0 8px 10px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
 }
 .cards-info:hover img{
     transform: scale(1.2);
     transition: 0.3s;
+    
 }
 
 /**************************
@@ -285,9 +287,11 @@ body::-webkit-scrollbar-thumb{
 **************************/
 .main-repertorio{
     display: flex; 
+    
 }
 .repertorio{
     text-decoration: none;
+    transition: all 0.4s;
 }
 .repertorio .prueba {
     height: 230px; 
@@ -328,7 +332,9 @@ body::-webkit-scrollbar-thumb{
 .main-repertorio .repertorio:hover .reper{
     color: rgb(182, 61, 50);
 }
-
+.main-repertorio .repertorio:hover{
+    transition: all 0.4s;
+}
 /**************************
         CARDS
 **************************/
@@ -354,7 +360,7 @@ body::-webkit-scrollbar-thumb{
     position: relative;
     background-image: url(../img/foncard.png);
     background-color: #fff;
-    margin: 10px 10px 30px;
+    margin: 10px 10px 50px;
     width: 280px;
     height: 320px;
     transition: all 0.2s;
@@ -395,9 +401,6 @@ body::-webkit-scrollbar-thumb{
     line-height: 22px;
     color: white;
 }
-.cards:hover{
-    box-shadow: 6px 12px 12px 0 rgba(83, 65, 63, 0.4);
-}
 .cards .link-face{
     position: absolute;
     right: 15px;
@@ -408,6 +411,12 @@ body::-webkit-scrollbar-thumb{
 .cards .link-face>a{
     color: white;   
 }
+.cards:hover{
+    box-shadow: 6px 12px 12px 0 rgba(83, 65, 63, 0.4);
+    transform: translateY(-12px);
+    transition: 0.3;
+}
+
 
 /******************************
     SOCIAL - NETWORK
@@ -451,6 +460,10 @@ body::-webkit-scrollbar-thumb{
 .main-testimonial{
     background-color: rgba(44, 41, 40,0.2); 
     padding: 100px 0;
+    background-image: url(../img/recomendation.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .testimonial-title h2{
     text-align: center;
